@@ -10,7 +10,11 @@ const userSlice = createSlice({
     name:'user',
     initialState,
     reducers: {
+<<<<<<< HEAD
         signInStart: (state) => {
+=======
+        signInStart: (state) => {
+>>>>>>> e8ca77a72d1a2fa40e801419e3f878764916c325
             state.loading = true;
         },
         signInSuccess: (state,action) => {
@@ -19,7 +23,11 @@ const userSlice = createSlice({
             state.error = null;
         },
         signInFailure: (state,action) => {
+<<<<<<< HEAD
             state.error = action.payload;
+=======
+            state.currentUser = action.payload;
+>>>>>>> e8ca77a72d1a2fa40e801419e3f878764916c325
             state.loading = false;
     }
 }
@@ -27,4 +35,8 @@ const userSlice = createSlice({
 
 export const { signInStart, signInSuccess, signInFailure } = userSlice.actions;
 
+<<<<<<< HEAD
 export default userSlice.reducer; 
+=======
+export default userSlice.reducer;
+>>>>>>> e8ca77a72d1a2fa40e801419e3f878764916c325
